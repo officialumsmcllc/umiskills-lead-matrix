@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: umiskills-lead-matrix
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: sh start.sh
+    plan: standard
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.8
