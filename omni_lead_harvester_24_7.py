@@ -11,6 +11,9 @@ from requests.adapters import HTTPAdapter
 import dns.resolver
 import threading
 import random
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ==============================================================
 # UMISKILLS - 24/7 HYPER-SPEED OMNI LEAD ENGINE (ULTRA EXPANDED)
